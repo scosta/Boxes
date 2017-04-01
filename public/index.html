@@ -4,10 +4,18 @@
         <title>Boxes</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/style/main.css">
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/three.min.js"></script>
+        <script type="text/javascript" src="/js/scene.js"></script>
     </head>
     <body>
-        <script src="/javascripts/three.js"></script>
-        <script src="/javascripts/boxes.js"></script>
+        <div id="scene"></div>
+        <script type="text/javascript">
+            $(function() {
+                init();
+                animate();
+            });
+        </script>
     </body>
 </html>
